@@ -2,8 +2,6 @@ Preprint available:
 
 Data and Code also available on Zenodo:
 
-[![DOI]()
-
 # Defended Small Towns in Roman Britain Structured by Roman Road Network
 
 This repository contains all the data and scripts required to fully reproduce all analyses presented in the paper "Defended Small Towns in Roman Britain Structured by Roman Road Network" authored by Lewis, J.
