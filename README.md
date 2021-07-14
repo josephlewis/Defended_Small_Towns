@@ -1,8 +1,8 @@
-Preprint available: https://doi.org/10.31235/osf.io/mxas2
+Preprint available: 
 
 Data and Code also available on Zenodo:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4074956.svg)](https://doi.org/10.5281/zenodo.4074956)
+[![DOI]()
 
 # Defended Small Towns in Roman Britain Structured by Roman Road Network
 
