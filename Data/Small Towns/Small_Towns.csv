@@ -1,35 +1,24 @@
 Site Name,Roman Name,Origin,Status,Defended,Second_Century_Defence,NGR,Site X,Site Y,Location_Source,Record_Number
-Adel,,NA,Other,No,No,SE 277 411,427700,441100,Historic England,51607
-Alcester,Alauna,Definite Fort,Other,Yes,No,SP 089 573,408900,257300,Historic England,328440
-Alchester,,Probable Fort,Other,Yes,No,SP 5724 2025,457240,220250,Historic England,338885
+Alcester,Alauna,Definite Fort,Other,Yes,Yes,SP 089 573,408900,257300,Historic England,328440
+Alchester,,Probable Fort,Other,Yes,Yes,SP 5724 2025,457240,220250,Historic England,338885
 Ashton,,Probable LPRIA site,Other,No,No,TL 04793 89138,504793,289138,Historic England,361094
-Asthall,,NA,Other,No,No,SP 290 112,429000,211200,Historic England,332337
 Badbury,Vindocladia,Probable LPRIA site,Other,No,No,ST 960 029,396000,102900,Historic England,209544
 Baldock,,Definite LPRIA site,Other,No,No,TL 24911 33899,524911,233899,Historic England,365755
 Bath,Aquae Sulis,Dual LPRIA/fort,Other,Yes,Yes,ST 7502 6477,375020,164770,Historic England,204118
-Billingford,,NA,Other,No,No,TG 00840 20096,600840,320096,Historic England,1566975
-Bitterne,CLAUSENTUM,NA,Other,Yes,Yes,SU 4342 1334,443420,113340,Historic England,230258
 Blackwardine,,Uncertain,Other,No,No,SO 533 567,353300,256700,Historic England,110665
-Bourne,,NA,Other,No,No,TF 169 218,516900,321800,Historic England,350727
 Bourton-on-the-Water,,Probable LPRIA site,Other,No,No,SP 16 20,416000,220000,Historic England,330368
 Braintree,,Definite LPRIA site,Other,No,No,TL 755 230,575500,223000,Historic England,379030
 Braughing,,Definite LPRIA site,Other,No,No,TL 388 242,538800,224200,Historic England,367978
-Brockley Hill,SULLONIACAE,NA,Other,No,No,TQ 175 940,517500,194000,Historic England,398293
-Burgh-by-Sands,ABALLAVA,NA,Other,No,No,NY 330 590,333000,559000,Historic England,10758
 Buxton,Aquae Arnemetiae,Dual LPRIA/fort,Other,No,No,SK 05791 73461,405791,373461,Historic England,306059
 Caistor,Perhaps BANNOVALIUM,Uncertain,Other,No,No,TA 1168 0130,511680,401300,Historic England,80330
 Cambridge,Duroliponte,Dual LPRIA/fort,Other,Yes,No,TL 4445 5926,544450,259260,Historic England,371356
 Camerton,,Probable LPRIA site,Other,No,No,ST 688 562,368800,156200,Historic England,200496
-Catterick,CATARACTONIUM,Definite Fort,Other,Yes,No,SE 22473 99142,422473,499142,Historic England,52316
+Catterick,CATARACTONIUM,Definite Fort,Other,Yes,Yes,SE 22473 99142,422473,499142,Historic England,52316
 Charterhouse-on-Mendip,Perhaps Iscalis,Definite Fort,Other,No,No,ST 500 562,350000,156200,Historic England,1519564
 Chelmsford,Caesaromagus,Definite Fort,Other,Yes,Yes,TL 70899 06189,570899,206189,Historic England,378248
-Chigwell,Durolitum,NA,Other,No,No,TQ 454 960,545400,196000,Historic England,408199
 Coddenham,COMBRETOVIUM,Dual LPRIA/fort,Other,No,No,TM 112 529,611200,252900,Historic England,388704
 Corbridge,Coriosopitum,Definite Fort,Other,No,No,NY 98222 64842,398222,564842,Historic England,18511
 Cowbridge,Bovium,Communications?,Other,No,No,SS9944074660,299440,174660,Coflein,307254
-Cricklade,,NA,Other,No,No,SU 099 939,409900,193900,Historic England,216736
-Dartford,NOVIOMAGUS,NA,Other,No,No,TQ 5013 7082,550130,170820,Historic England,410937
-Denver,,NA,Other,No,No,TF 591 006,559100,300600,Historic England,355743
 Dolaucothi,,Definite Fort,Other,No,No,SN655403,265570,240350,Pleiades,82301
 Dorchester-on-Thames,,Dual LPRIA/fort,Other,Yes,Yes,SU 577 942,457700,194200,Historic England,238093
 Dragonby,,Definite LPRIA site,Other,No,No,SE 905 139,490500,413900,Historic England,63764
@@ -38,99 +27,65 @@ Dunstable,Durocobrivis,Communications?,Other,No,No,TL 019 219,501900,221900,Hist
 Duston,,Probable LPRIA site,Other,No,No,SP 72909 60507,472909,260507,Historic England,343603
 Dymock,,Dual LPRIA/fort,Other,No,No,SO 700 312,370000,231200,Historic England,113597
 East Anton,,Communications?,Other,No,No,SU 371 474,437100,147400,Historic England,227984
-East Bridgeford,MARGIDUNUM,Probable Fort,Other,No,No,SK 700 416,470000,341600,Historic England,321885
+East Bridgeford,MARGIDUNUM,Probable Fort,Other,Yes,Yes,SK 700 416,470000,341600,Historic England,321885
 Ewell,,Probable LPRIA site,Other,No,No,TQ 22 62,522000,162000,Historic England,400924
-Fenny Stratford,MAGIOVINIUM,NA,Other,No,No,SP 89039 33494,489039,233494,Historic England,344743
-Fimber,Delgovicia,NA,Other,No,No,SE 920 597,492000,459700,Historic England,64538
-Fingringhoe Wick Fingringhoe,,NA,Other,No,No,TM 047 193,604700,219300,Historic England,386043
 Frilford,,Definite LPRIA site,Other,No,No,SU 4388 9624,443880,196240,Historic England,234031
-Gatcombe,,NA,Other,No,No,ST 5273 6995,352730,169950,Historic England,197955
 Godmanchester,Durovigutum,Definite Fort,Other,Yes,No,TL 238 703,523800,270300,Historic England,366799
-Grafton,Bovium,NA,Other,No,No,SJ 453 517,345300,351700,Historic England,873469
 Great Casterton,,Definite Fort,Other,Yes,Yes,TF 002 090,500200,309000,Historic England,347926
 Great Chesterford,,Dual LPRIA/fort,Other,Yes,No,TL 5033 4299,550330,242990,Historic England,374253
 Great Dunmow,,Uncertain,Other,No,No,TL 62993 22957,562993,222957,Historic England,376484
-Greta Bridge,,NA,Other,No,No,NZ 085 134,408500,513400,Historic England,1143630
 Hacheston,,Uncertain,Other,No,No,TM 312 568,631200,256800,Historic England,391343
-Harcourt Mill,RUTUNIUM,NA,other,No,No,SJ 5570 2545,355700,325450,Historic England,70623
-Hardham,,NA,Other,No,No,TQ 0310 1737,503100,117370,Historic England,393011
 Harlow,,Definite LPRIA site,Other,No,No,TL 472 125,547200,212500,Historic England,370082
 Heronbridge,,Uncertain,Other,No,No,SJ 411 636,341100,363600,Historic England,69293
 Heybridge,,Definite LPRIA site,Other,No,No,TL 8502 0823,585020,208230,Historic England,380695
 Hibaldstow,,Communications?,Other,No,No,SE 9590 0317,495900,403170,Historic England,63466
 High Cross,Venonis,Communications?,Other,No,No,SP 473 886,447300,288600,Historic England,337719
-Higham,Ad Ansam,NA,Other,No,No,TM 039 351,603900,235100,Historic England,386555
 Holditch,,Definite Fort,Other,No,No,SJ8390048300,383900,348300,Historic England,75898
 Horncastle,Perhaps BANNOVALIUM,Uncertain,Other,Yes,No,TF2587069580,525870,369580,Historic England,80330
-Icklingham,,NA,Other,No,No,TL 783 719,578300,271900,Historic England,379971
-Ilchester,Lindinis Durotrigum,Civitas capital,Other,Yes,No,ST 521 227,352100,122700,Historic England,196505
-Iping,,NA,Other,No,No,SU 8439 2606,484390,126060,Historic England,246739
 Irchester,,Probable LPRIA site,Other,Yes,Yes,SP 916 666,491600,266600,Historic England,347066
 Ixworth,,Definite Fort,Other,No,No,TL 9313 6975,593130,269750,Historic England,385184
 Kelvedon,Canonium,Dual LPRIA/fort,Other,Yes,Yes,TL 864 185,586400,218500,Historic England,381009
-Kempstone,,NA,Other,No,No,TF 875 165,587500,316500,Historic England,357883
 Kenchester,Magnis,Probable Fort,Other,Yes,Yes,SO 440 428,344000,242800,Historic England,108086
 Kettering,,Probable LPRIA site,Other,No,No,SP 886 780,488600,278000,Historic England,345761
-Kingscote,,NA,Other,No,No,ST 80697 95880,380697,195880,Historic England,209044
-KIRKBY THORE,,NA,Other,No,No,NY 6380 2560,363800,525600,Historic England,13562
 Kirmington,,Dual LPRIA/fort,Other,No,No,TA 096 113,509600,411300,Historic England,78849
-LEINTWARDINE,BRAVONIVM,NA,Other,Yes,Yes,SO 407 741,340700,274100,Historic England,108807
-Littleborough,SEGELOCUM,NA,Other,No,No,SK 8221 8292,482210,382920,Historic England,324920
 Littlechester,DERVENTIO,Definite Fort,Other,Yes,Yes,SK 3536 3750,435360,337500,Historic England,313283
-Long Melford,,NA,Other,No,No,TL 861 451,586100,245100,Historic England,381918
-Lower Lea,,NA,Other,No,No,SP 3882 3857,438820,238570,Historic England,335045
 Malton,DERVENTIO,Definite Fort,Other,No,No,SE 7915 7178,479150,471780,Historic England,59794
-Medbourne,,NA,Other,No,No,SP 7900 9325,479000,293250,Historic England,344067
 Middlewich,Salinae,Probable Fort,Other,No,No,SJ 7022 6695,370220,366950,Historic England,1008702
-Mildenhall,Cunetio,Probable Fort,Other,Yes,No,SU 2185 6936,421850,169360,Historic England,224765
-Monmouth,Blestium,NA,Other,No,No,SO5077012870,350770,212870,Coflein,409995
+Mildenhall,Cunetio,Probable Fort,Other,Yes,Yes,SU 2185 6936,421850,169360,Historic England,224765
 Neatham,Vindonium,Communications?,Other,Yes,Yes,SU 740 412,474000,141200,Historic England,244074
+Nettleton Scrubb,,Probable Fort,Other,No,No,ST8220076900,382200,176900,The Rural Settlement of Roman Britain: an online resource,17001
 Northwich,Condate,Definite Fort,Other,No,No,SJ 655 736,365500,373600,Historic England,72996
-Nursling,ONNA,NA,Other,No,No,SU 365 157,436500,115700,Historic England,226702
 Old Sarum,Sorviodunum,Probable LPRIA site,Other,No,No,SU 13784 32699,413784,132699,Historic England,1474280
-Ospringe,DUROLEVUM,NA,Other,No,No,TQ 9951 6113,599510,161130,Historic England,419935
 Owmby,,Probable LPRIA site,Other,No,No,SK 9701 8645,497010,386450,Historic England,326792
 Penkridge,PENNOCRUCIUM,Definite Fort,Other,No,No,SJ 9025 1071,390250,310710,Historic England,77243
 Pentre,,Probable Fort,Other,No,No,SJ033743,303345,374344,Pleiades,79730
-Prestatyn Clwyd,,NA,Other,No,No,SJ0621081750,306210,381750,Coflein,306722
 Redhill,Uxacona,Definite Fort,Other,No,No,SJ 727 109,372700,310900,Historic England,73987
 Rocester,,Definite Fort,Other,Yes,Yes,SK 1116 3938,411160,339380,Historic England,307294
 Rochester,Durobrivae,Definite LPRIA site,Other,Yes,Yes,TQ 74166 68610,574166,168610,Historic England,416075
-Saham Toney,,NA,Other,No,No,TF 8899 0065,588990,300650,Historic England,357793
+Saltersford,perhaps Causennis,Communications?,Other,No,No,SK9230033400,492300,333400,Historic England,891815
 Sapperton,perhaps Causennis,Probable LPRIA site,Other,No,No,TF 0174 3305,501740,333050,Historic England,348739
-Sawtry,,NA,Other,No,No,TL 173 840,517300,284000,Historic England,363912
 Scole,Villa Faustini,Communications?,Other,No,No,TM 149 786,614900,278600,Historic England,389015
 Sea Mills,Abona,Probable Fort,Other,No,No,ST 551 758,355100,175800,Historic England,198200
-Shepton Mallet,,NA,Other,No,No,ST 6295 4245,362950,142450,Historic England,1068143
 Shiptonthorpe,perhaps Delgovicia,Communications?,Other,No,No,SE 852 424,485200,442400,Historic England,910581
 Sleaford,,Definite LPRIA site,Other,No,No,TF 0515 4573,505150,345730,Historic England,348929
-Speen,Spinis,NA,Other,No,No,SU 4544 6790,445440,167900,Historic England,232919
 Springhead,Vagniacis,Definite LPRIA site,Other,No,No,TQ 6174 7246,561740,172460,Historic England,413786
 Staines,Pontibus,Probable Fort,Other,No,No,TQ 036 716,503600,171600,Historic England,394852
-Stonea,,NA,Other,No,No,TL 448 936,544800,293600,Historic England,870039
-Stretton Grandison,,NA,Other,No,No,SO 635 432,363500,243200,Historic England,112393
-Tadcaster,CALCARIA,NA,Other,No,No,SE 4862 4282,448620,442820,Historic England,54930
-Thatcham,,NA,Other,No,No,SU 503 670,450300,167000,Historic England,1388928
 Thorpe-by-Newark,Ad Pontem,Definite Fort,Other,Yes,Yes,SK 759 504,475900,350400,Historic England,322257
 Tiddington,,Uncertain,Other,No,No,SP 2185 5555,421850,255550,Historic England,333167
-Topsham,,NA,Other,No,No,SX 9612 8865,296120,88650,Historic England,447819
-Towcester,Lactodurum,Communications?,Other,Yes,Yes,SP 69 48,469000,248000,Historic England,341226
+Towcester,Lactodurum,Communications?,Other,Yes,Yes,SP6900048000,469000,248000,Historic England,341226
 Wall,Letocetum,Definite Fort,Other,Yes,No,SK 09899 06523,409899,306523,Historic England,304404
-Walton-le-Dale Preston,,NA,Other,No,No,SD 5513 2812,355130,428120,Historic England,42462
 Wanborough,Durocornovium,Communications?,Other,No,No,SU 1938 8535,419380,185350,Historic England,221858
-Water Newton,Durobrivae,Definite Fort,Other,Yes,No,TL 1162 9724,511620,297240,Historic England,364454
-Welwyn,,NA,Other,No,No,TL 232 162,523200,216200,Historic England,364825
-Caistor by Yarmouth,,NA,Other,Yes,Yes,TG 513 122,651300,312200,Historic England,1143684
+Ware,,Uncertain,Other,No,No,TL3520014150,535200,214150,The Rural Settlement of Roman Britain: an online resource,3027
+Water Newton,Durobrivae,Definite Fort,Other,Yes,Yes,TL 1162 9724,511620,297240,Historic England,364454
 Weston-under-Penyard,Ariconium,Probable LPRIA site,Other,No,No,SO 645 237,364500,223700,Historic England,111914
 Whitchurch,Mediolanum,Definite Fort,Other,Yes,Yes,SJ 54107 41599,354107,341599,Historic England,70991
-White Walls Easton Grey,,NA,Other,No,No,ST 88940 87127,388940,187127,Historic England,208581
-Wickford,,NA,Other,Yes,Yes,TQ 762 937,576200,193700,Historic England,417099
-Wickham,CLAUSENTUM,NA,Other,No,No,SU 57 11,457000,111000,Historic England,234684
-Wigan,COCCIUM,NA,Other,No,No,SD 581 054,358100,405400,Historic England,41868
 Wilderspool,,Uncertain,Other,No,No,SJ 6127 8627,361270,386270,Historic England,73156
 Willoughby,Vernemetum,Communications?,Other,No,No,SK 649 249,464900,324900,Historic England,319592
-Wimpole Lodge,,NA,Other,No,No,TL 3333 4840,533330,248400,Historic England,368569
 Winteringham,,Probable Fort,Other,No,No,SE 945 214,494500,421400,Historic England,63999
-Wixoe,,NA,Other,No,No,TL 7043,570000,243000,Atkins (2012),NA
 Worcester,Perhaps Vertis,Probable LPRIA site,Other,Yes,Yes,SO 84986 54765,384986,254765,Historic England,116188
 Wycomb,,Probable LPRIA site,Other,No,No,SP 0276 2001,402760,220010,Historic England,327986
+Cave's Inn,Tripontium,Communications?,Other,Yes,No,SP5330079500,453300,279500,Historic England,340117
+Whilton Lodge,Bannaventa,Communications?,Other,Yes,Yes,SP6110064600,461100,264600,Historic England,341769
+Mancetter,Manduessedum,Definite Fort,Other,Yes,No,SP3260096700,432600,296700,Historic England,336160
+Ancaster,Causennae,Dual LPRIA/fort,Other,Yes,No,SK9840043600,498400,343600,Historic England,325933
+Chesterton-on-Fosse,,Communications?,Other,Yes,No,SP3410059700,434100,259700,Historic England,335344
