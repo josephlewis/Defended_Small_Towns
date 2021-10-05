@@ -15,14 +15,6 @@ shuffle_towns <- function(network) {
   
 }
 
-calculate_global_efficiency <- function(network, nodes_removed, shuffle = TRUE) { 
-  
-  df <- data.frame(nodes_removed = nodes_removed, metric = "Global Efficiency", value = brainGraph::efficiency(g = network, type = "global", use.parallel = FALSE), shuffle = shuffle)
-  
-  return(df)
-  
-}
-
 calculate_nodal_efficiency <- function(network, shuffle = TRUE) {
   
   efficiency <- brainGraph::efficiency(g = network, type = "nodal", use.parallel = FALSE)
@@ -53,9 +45,9 @@ calculate_betweenness <- function(network, shuffle = TRUE) {
     activate("edges") %>%
     sf::st_as_sf()
   
-  edges_with_towns <- sf::st_intersection(network_edges, small_town_nodes)
+  edges_with_towns <- sf::st_nearest_feature(small_town_nodes, network_edges)
   
-  town_edge_betweenness <- mean(betweenness[which(network_edges$Name %in% unique(edges_with_towns$Name))])
+  town_edge_betweenness <- mean(betweenness[edges_with_towns])
   
   df <- data.frame(metric = "Mean Edge Betweeness", value = town_edge_betweenness, shuffle = shuffle)
   
@@ -87,7 +79,8 @@ plot_network <- function(network, legend = TRUE, title = NA, small_towns = TRUE,
     tm_shape(road_network_sf) + 
     tm_lines() + 
     tm_shape(nodes) + 
-    tm_dots(col = col, size = size, palette = c("red", "black"), title = "Second Century Defence", legend.show = legend)
+    tm_dots(col = col, size = size, palette = c("red", "black"), title = "Second Century Defence", legend.show = legend) + 
+    tm_scale_bar()
   
   if (legend) { 
     
@@ -96,8 +89,7 @@ plot_network <- function(network, legend = TRUE, title = NA, small_towns = TRUE,
       tm_add_legend('line', 
                     col = c("black"),
                     lwd = c(1),
-                    labels = c('Roman Road')) + 
-      tm_scale_bar()
+                    labels = c('Roman Road'))
     
   }
   
@@ -164,18 +156,21 @@ plot_betweenness_network <- function(network) {
     filter(Second_Century_Defence == "Yes") %>%
     st_as_sf()
   
-  plot <-     
-    tm_shape(outline) + 
+  road_nodes_sf <- network %>%
+    sfnetworks::activate("nodes") %>%
+    filter(Second_Century_Defence == "No") %>%
+    st_as_sf()
+  
+  plot <- tm_shape(outline) + 
     tm_polygons(col = "white", border.col = "white") + 
     tm_shape(network_sf) + 
     tm_lines(lwd = "Edge Betweenness", scale=10) + 
+    tm_shape(road_nodes_sf) + 
+    tm_dots(col = viridis::cividis(5)[3], border.col = viridis::cividis(5)[3], size = 0.5) + 
     tm_shape(road_defended_small_town_nodes_sf) + 
     tm_dots(col = "red", size = 0.5) + 
-    tm_add_legend('symbol', 
-                  border.col = "red",
-                  col = "red",
-                  size = 1,
-                  labels = c('Defended Small Town')) + 
+    tm_add_legend('symbol', border.col = "red",col = "red", size = 1,labels = c('Defended Small Town')) + 
+    tm_add_legend('symbol', border.col = viridis::cividis(5)[3],col = viridis::cividis(5)[3], size = 1,labels = c('Non-Defended Small Town')) + 
     tm_layout(frame = FALSE, bg.color = "#C8C8C8", legend.position = c("right","top")) + 
     tm_scale_bar()
   
