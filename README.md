@@ -2,9 +2,9 @@ Preprint available:
 
 Data and Code also available on Zenodo:
 
-# Provision of Defences around Roman Britain Small Towns Structured by Road Network Connectivity
+# Second Century Defences around Small Towns in Roman Britain Structured by Road Network Connectivity
 
-This repository contains all the data and scripts required to fully reproduce all analyses presented in the paper "Provision of Defences around Roman Britain Small Towns Structured by Road Network Connectivity" authored by Lewis, J.
+This repository contains all the data and scripts required to fully reproduce all analyses presented in the paper "Second Century Defences around Small Towns in Roman Britain Structured by Road Network Connectivity" authored by Lewis, J.
 
 Getting Started
 ---------------
