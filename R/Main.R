@@ -75,12 +75,12 @@ fig1a <-
   tm_shape(outline) + 
   tm_polygons(col = "white", border.col = "white") +
   tm_shape(road[road$Source == "Margary",]) +
-  tm_lines(col = "black", lwd= 1) +
+  tm_lines(col = "grey40", lwd= 1) +
   tm_shape(road[road$Source == "Lewis",]) +
-  tm_lines(col = "red", lwd=2) +
+  tm_lines(col = "black", lwd=2) +
   tm_layout(frame = TRUE, title = "A", bg.color = "#C8C8C8")
 
-fig1b <- plot_network(road_network, legend = FALSE, small_towns = FALSE, size = 0.02, col = "red", title = "B")
+fig1b <- plot_network(road_network, legend = FALSE, small_towns = FALSE, point_size  = 0.05, title = "B", road_colour = "grey20")
 
 fig1 <- tmap::tmap_arrange(list(fig1a, fig1b))
 
@@ -97,11 +97,13 @@ fig2 <- tm_shape(outline) +
   tm_lines(col = "black", lwd=1) +
   tm_shape(road_network_nodes) + 
   tm_dots(size = 0.05) + 
-  tm_shape(small_towns) +
-  tm_dots(col = "Second_Century_Defence", size = 0.5, palette = c("red", viridis::cividis(5)[3]), title = "Second Century Defence", legend.show = FALSE) +
-  tm_add_legend('symbol', border.col = "red",col = "red", size = 1,labels = c('Defended Small Town')) + 
+  tm_shape(small_towns[small_towns$Second_Century_Defence == "No",]) +
+  tm_dots(col = viridis::cividis(5)[3], size = 0.5, title = "Second Century Defence", legend.show = FALSE, shape = 16) + 
+  tm_shape(small_towns[small_towns$Second_Century_Defence == "Yes",]) +
+  tm_dots(col = "black", size = 0.5, title = "Second Century Defence", legend.show = FALSE, shape = 15) + 
+  tm_add_legend('symbol', border.col = "black",col = "black", size = 1, labels = c('Defended Small Town'), shape = 15) + 
   tm_add_legend('symbol', border.col = viridis::cividis(5)[3],col = viridis::cividis(5)[3], size = 1,labels = c('Non-Defended Small Town')) + 
-  tm_add_legend('symbol', border.col = "black",col = "black", size = 1,labels = c('Roman Road Nodes')) + 
+  tm_add_legend('symbol', border.col = "black",col = "black", size = 0.5,labels = c('Roman Road Nodes')) + 
   tm_layout(frame = FALSE, bg.color = "#C8C8C8", legend.position = c("right","top")) + 
   tm_scale_bar()
 
@@ -122,10 +124,10 @@ tmap::tmap_save(tm = fig4,  "./Outputs/Figures/Figure 4.png", dpi = 300)
 #### FIGURE FIVE ####
 
 fig5 <- tmap_arrange(list(
-  plot_network(road_network, legend = TRUE, title = "A"),
-  plot_network(shuffle_towns(road_network), legend = FALSE, title = "B"),
-  plot_network(shuffle_towns(road_network), legend = FALSE, title = "C"),
-  plot_network(shuffle_towns(road_network), legend = FALSE, title = "D")
+  plot_network(road_network, legend = TRUE, title = "A", road_colour = "grey40"),
+  plot_network(shuffle_towns(road_network), legend = FALSE, title = "B", road_colour = "grey40"),
+  plot_network(shuffle_towns(road_network), legend = FALSE, title = "C", road_colour = "grey40"),
+  plot_network(shuffle_towns(road_network), legend = FALSE, title = "D", road_colour = "grey40")
 ), ncol = 2, nrow = 2)
 
 tmap::tmap_save(tm = fig5, filename = "./Outputs/Figures/Figure 5.png",dpi = 300, width = 2000, height = 3000)

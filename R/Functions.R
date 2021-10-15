@@ -55,7 +55,7 @@ calculate_betweenness <- function(network, shuffle = TRUE) {
   
 }
 
-plot_network <- function(network, legend = TRUE, title = NA, small_towns = TRUE, col = "Second_Century_Defence", size = 0.2) {
+plot_network <- function(network, legend = TRUE, title = NA, small_towns = TRUE, point_size = 0.1, road_colour = "black") {
   
   road_network_sf <- network %>%
     sfnetworks::activate("edges") %>%
@@ -66,30 +66,39 @@ plot_network <- function(network, legend = TRUE, title = NA, small_towns = TRUE,
     nodes <- sf::st_as_sf(network) %>%
       dplyr::filter(!is.na(Second_Century_Defence))
     
+    plot <-     
+      tm_shape(outline) + 
+      tm_polygons(col = "white", border.col = "white") +
+      tm_shape(road_network_sf) + 
+      tm_lines(col = road_colour) + 
+      tm_shape(nodes[nodes$Second_Century_Defence == "No",]) +
+      tm_dots(col = viridis::cividis(5)[3], size = point_size, title = "Second Century Defence", legend.show = FALSE, shape = 16) + 
+      tm_shape(nodes[nodes$Second_Century_Defence == "Yes",]) +
+      tm_dots(col = "black", size = point_size, title = "Second Century Defence", legend.show = FALSE, shape = 15)
+    
   } else { 
     
     nodes <- sf::st_as_sf(network) %>%
       dplyr::filter(is.na(Second_Century_Defence))
     
+    plot <-     
+      tm_shape(outline) + 
+      tm_polygons(col = "white", border.col = "white") +
+      tm_shape(road_network_sf) + 
+      tm_lines(col = road_colour) + 
+      tm_shape(nodes) +
+      tm_dots(col = "black", size = point_size, title = "Road Network Nodes", legend.show = FALSE, shape = 16)
+    
   }
-  
-  plot <-     
-    tm_shape(outline) + 
-    tm_polygons(col = "white", border.col = "white") +
-    tm_shape(road_network_sf) + 
-    tm_lines() + 
-    tm_shape(nodes) + 
-    tm_dots(col = col, size = size, palette = c("red", "black"), title = "Second Century Defence", legend.show = legend) + 
-    tm_scale_bar()
   
   if (legend) { 
     
     plot <- 
       plot + 
-      tm_add_legend('line', 
-                    col = c("black"),
-                    lwd = c(1),
-                    labels = c('Roman Road'))
+      tm_add_legend('symbol', border.col = "black",col = "black", size = 1, labels = c('Defended Small Town'), shape = 15) + 
+      tm_add_legend('symbol', border.col = viridis::cividis(5)[3],col = viridis::cividis(5)[3], size = 1,labels = c('Non-Defended Small Town')) + 
+      tm_add_legend('line', col = c(road_colour),lwd = c(1),labels = c('Roman Road')) + 
+      tm_scale_bar()
     
   }
   
@@ -164,13 +173,13 @@ plot_betweenness_network <- function(network) {
   plot <- tm_shape(outline) + 
     tm_polygons(col = "white", border.col = "white") + 
     tm_shape(network_sf) + 
-    tm_lines(lwd = "Edge Betweenness", scale=10) + 
+    tm_lines(lwd = "Edge Betweenness", scale=10, col = "grey60") + 
     tm_shape(road_nodes_sf) + 
-    tm_dots(col = viridis::cividis(5)[3], border.col = viridis::cividis(5)[3], size = 0.5) + 
+    tm_dots(col = "grey40", size = 0.5) + 
     tm_shape(road_defended_small_town_nodes_sf) + 
-    tm_dots(col = "red", size = 0.5) + 
-    tm_add_legend('symbol', border.col = "red",col = "red", size = 1,labels = c('Defended Small Town')) + 
-    tm_add_legend('symbol', border.col = viridis::cividis(5)[3],col = viridis::cividis(5)[3], size = 1,labels = c('Non-Defended Small Town')) + 
+    tm_dots(col = "black", size = 0.5, shape = 15) + 
+    tm_add_legend('symbol', border.col = "black",col = "black", size = 1,shape = 15, labels = c('Defended Small Town')) + 
+    tm_add_legend('symbol', border.col = "grey40",col = "grey40", size = 1,labels = c('Non-Defended Small Town')) + 
     tm_layout(frame = FALSE, bg.color = "#C8C8C8", legend.position = c("right","top")) + 
     tm_scale_bar()
   
