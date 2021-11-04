@@ -1,6 +1,4 @@
-Preprint available: 
-
-Data and Code also available on Zenodo:
+Preprint available: https://osf.io/gdm5z
 
 # Second Century Defences around Small Towns in Roman Britain Structured by Road Network Connectivity
 
