@@ -1,3 +1,9 @@
+Published in Journal of Roman Archaeology:
+
+To cite:
+
+Lewis, J. (2022). 2nd c. CE defenses around small towns in Roman Britain structured by road network connectivity. Journal of Roman Archaeology, 1–12. https://doi.org/10.1017/S1047759421000775
+
 Preprint available: https://osf.io/gdm5z
 
 # Second Century Defences around Small Towns in Roman Britain Structured by Road Network Connectivity
